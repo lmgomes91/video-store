@@ -2,23 +2,24 @@
    "type": "postgres",
    "host": "localhost",
    "port": 5432,
-   "username": "test",
-   "password": "test",
-   "database": "test",
-   "synchronize": true,
-   "logging": false,
+   "username": "postgres",
+   "password": "docker",
+   "database": "postgres",
+   "strict": true,
+   "strictPropertyInitialization": false,
+   "esModuleInterop": true,
+   "experimentalDecorators": true,
+   "emitDecoratorMetadata": true,
+   "forceConsistentCasingInFileNames": true,
+   "allowJs": true,
    "entities": [
-      "src/entity/**/*.ts"
+      "src/**/entities/*.ts"
    ],
    "migrations": [
-      "src/migration/**/*.ts"
-   ],
-   "subscribers": [
-      "src/subscriber/**/*.ts"
+      "src/database/migrations/*.ts"
    ],
    "cli": {
-      "entitiesDir": "src/entity",
-      "migrationsDir": "src/migration",
-      "subscribersDir": "src/subscriber"
+      "entitiesDir": "src/**/entities",
+      "migrationsDir": "src/database/migrations"
    }
 }
