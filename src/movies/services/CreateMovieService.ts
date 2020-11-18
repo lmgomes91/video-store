@@ -1,4 +1,4 @@
-import { Request, response, Response } from "express";
+import { Request, Response } from "express";
 import { ICreateMovie } from "../dtos/ICreateMovieDTO";
 import { MovieRepository } from "../repositories/MovieRepository";
 
@@ -14,8 +14,8 @@ export const createMovie = async (req: Request, res: Response) => {
   const movie = await movieRepository.create({ amount, director, title });
 
   if (movie instanceof Error) {
-    return response.status(400).json({ message: "Failed to create movie" });
+    return res.status(400).json({ message: "Failed to create movie" });
   }
 
-  return response.status(200).json({ movie });
+  return res.status(200).json({ movie });
 };
