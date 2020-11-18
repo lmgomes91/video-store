@@ -21,7 +21,8 @@ export class UserRepository {
 
   public async retrieve(iRetrieve?: IRetriveUser): Promise<User[] | Error> {
     try {
-      let users: User[];
+      let users: User[] = [];
+
       if (iRetrieve) {
         const query: { [x: string]: any } = {};
         query[iRetrieve.attribute] = iRetrieve.value;

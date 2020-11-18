@@ -4,6 +4,7 @@ import {
   PrimaryGeneratedColumn,
   CreateDateColumn,
   UpdateDateColumn,
+  Exclusion,
 } from "typeorm";
 
 @Entity("users")
@@ -18,7 +19,7 @@ class User {
   email: string;
 
   @Column()
-  password: string;
+  password?: string;
 
   @CreateDateColumn()
   created_at: Date;

@@ -1,3 +1,5 @@
 import { createConnections } from "typeorm";
 
-createConnections();
+createConnections().then(() => {
+  console.log("Database online");
+});
