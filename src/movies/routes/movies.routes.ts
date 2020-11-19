@@ -1,4 +1,6 @@
 import { Router } from "express";
+import { authAdmin } from "../../http/middlewares/authAdmin.middleware";
+import { authUser } from "../../http/middlewares/authUser.middleware";
 import { createMovie } from "../services/CreateMovieService";
 import { deleteMovie } from "../services/DeleteMovieService";
 import { listMovies } from "../services/listMoviesServices";
@@ -6,7 +8,7 @@ import { updateMovie } from "../services/updateMovieServices";
 
 export const moviesRoutes = Router();
 
-moviesRoutes.post("/", createMovie);
-moviesRoutes.get("/", listMovies);
-moviesRoutes.put("/", updateMovie);
-moviesRoutes.delete("/", deleteMovie);
+moviesRoutes.post("/", authAdmin, createMovie);
+moviesRoutes.get("/", authUser, listMovies);
+moviesRoutes.put("/", authAdmin, updateMovie);
+moviesRoutes.delete("/", authAdmin, deleteMovie);

@@ -4,7 +4,7 @@ import { IRetriveRent } from "../dtos/IRetrieveRentDTO";
 import { IUpdateRent } from "../dtos/IUpdateRentDTO";
 import Rent from "../entities/Rent";
 
-class RentRepository {
+export class RentRepository {
   private ormRepository: Repository<Rent>;
   constructor() {
     this.ormRepository = getRepository(Rent);

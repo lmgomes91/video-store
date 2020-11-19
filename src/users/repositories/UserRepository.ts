@@ -1,4 +1,5 @@
 import { getRepository, Repository } from "typeorm";
+import { crypt } from "../../utils/crypt.utils";
 import { ICreateUser } from "../dtos/ICreateUserDTO";
 import { IRetriveUser } from "../dtos/IRetrieveUserDTO";
 import { IUpdateUser } from "../dtos/IUpdateUserDTO";

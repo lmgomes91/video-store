@@ -4,12 +4,14 @@ import { deleteUser } from "../services/deleteUserService";
 import { listUsers } from "../services/listUserService";
 import { sessionUSer } from "../services/sessionUserService";
 import { updateUser } from "../services/updateUserService";
+import { authAdmin } from "../../http/middlewares/authAdmin.middleware";
+import { authUser } from "../../http/middlewares/authUser.middleware";
 
 export const usersRouter = Router();
 
 usersRouter.post("/", createUser);
-usersRouter.get("/", listUsers);
-usersRouter.put("/", updateUser);
-usersRouter.delete("/", deleteUser);
+usersRouter.get("/", authAdmin, listUsers);
+usersRouter.put("/", authUser, updateUser);
+usersRouter.delete("/", authAdmin, deleteUser);
 
 usersRouter.post("/session", sessionUSer);
