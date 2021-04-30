@@ -5,7 +5,8 @@ This projetct simulate a basic video store system using Node.js and Postgres, an
     
     Path:  http://localhost:3333
     
-All routes are listed on routes.json file, located at docs folder, it was exported using [Insomnia Rest](https://insomnia.rest/).
+
+All routes are detailed with success calls at docs folder, and there is, also, a json file exported from [Insomnia Rest](https://insomnia.rest/) with the routes
 
 ## Initialize Project
 

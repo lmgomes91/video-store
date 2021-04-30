@@ -21,13 +21,13 @@ BODY: {
 ```json
 Response:
 {
-    "user": {
-        "name": "Lucas",
-        "email": "lgomes@email.com",
-        "id": "f7823f4e-91dc-4135-bfc0-f9632a349e70",
-        "created_at": "2020-11-19T09:41:35.169Z",
-        "updated_at": "2020-11-19T09:41:35.169Z"
-    }
+  "user": {
+    "name": "Lucas2",
+    "email": "lucas123@teste.com",
+    "id": "26afba25-77da-42fb-853b-46cd265175df",
+    "created_at": "2021-04-30T04:46:35.743Z",
+    "updated_at": "2021-04-30T04:46:35.743Z"
+  }
 }
 ```
 
@@ -50,8 +50,8 @@ BODY: {
 ```json
 Response:
 {
-    "name": "Lucas",
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY3ODIzZjRlLTkxZGMtNDEzNS1iZmMwLWY5NjMyYTM0OWU3MCIsIm5hbWUiOiJMdWNhcyIsImlhdCI6MTYwNTc2ODI0NywiZXhwIjoxNjA1ODU0NjQ3fQ.KeH5_kU3LwpN_tlFgUZoBDPMvipaq4QiA6YHN79khG4"
+  "name": "Lucas Gomes",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjgzNmE1ZDMwLWZiZTAtNGQ0Ny04NzZlLWExZWNmODhmNjBhNiIsIm5hbWUiOiJMdWNhcyBHb21lcyIsImlhdCI6MTYxOTY2MjA2MCwiZXhwIjoxNjE5NzQ4NDYwfQ.BdY710cSAmwt_yheoYsv5XKuEt169RqXqU8E7ZVLjHY"
 }
 ```
 
@@ -75,13 +75,13 @@ BODY: {
 ```json
 Response:
 {
-    "user": {
-        "id": "3c414307-7b41-44cb-84c8-68e427b17e47",
-        "name": "Lucas",
-        "email": "lgomes@post.com",
-        "created_at": "2020-11-19T06:54:22.441Z",
-        "updated_at": "2020-11-19T09:45:12.125Z"
-    }
+  "user": {
+    "id": "836a5d30-fbe0-4d47-876e-a1ecf88f60a6",
+    "name": "Lucas",
+    "email": "lucas@teste.com",
+    "created_at": "2021-04-29T03:24:30.375Z",
+    "updated_at": "2021-04-30T04:46:05.373Z"
+  }
 }
 ```
 
@@ -128,21 +128,14 @@ Query Params: {
 ```json
 Response:
 {
-    "users": [
-        {
-            "id": "571d213d-e294-4ef9-8a55-63f505f83d12",
-            "name": "Lucas",
-            "email": "lgomes@email2.com",
-            "created_at": "2020-11-19T07:18:48.112Z",
-            "updated_at": "2020-11-19T07:18:48.112Z"
-        },
-        {
-            "id": "f7823f4e-91dc-4135-bfc0-f9632a349e70",
-            "name": "Lucas",
-            "email": "lgomes@email.com",
-            "created_at": "2020-11-19T09:41:35.169Z",
-            "updated_at": "2020-11-19T09:41:35.169Z"
-        }
-    ]
+  "users": [
+    {
+      "id": "836a5d30-fbe0-4d47-876e-a1ecf88f60a6",
+      "name": "Lucas Gomes",
+      "email": "lucas@teste.com",
+      "created_at": "2021-04-29T03:24:30.375Z",
+      "updated_at": "2021-04-29T04:13:51.529Z"
+    }
+  ]
 }
 ```
